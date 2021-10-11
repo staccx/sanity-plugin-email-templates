@@ -1,10 +1,8 @@
 {
-  "name": "@staccx/package-template",
+  "name": "@staccx/sanity-plugin-emai-template",
   "version": "0.0.1",
-  "description": "Package template",
+  "description": "Email template document for Sanity",
   "main": "dist/index.js",
-  "module": "dist/index.es.js",
-  "jsnext:main": "dist/index.es.js",
   "author": "Stacc <espens@stacc.com>",
   "license": "MIT",
   "private": false,
@@ -36,5 +34,9 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-testing-library": "^4.12.2",
     "prettier": "^2.2.1"
-  }
+  },
+  "files": [
+    "lib",
+    "sanity.json"
+  ]
 }
