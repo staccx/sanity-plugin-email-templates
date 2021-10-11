@@ -1,5 +1,5 @@
 {
-  "name": "@staccx/sanity-plugin-emai-template",
+  "name": "@staccx/sanity-plugin-email-template",
   "version": "0.0.1",
   "description": "Email template document for Sanity",
   "main": "dist/index.js",
