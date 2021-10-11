@@ -9,7 +9,7 @@
   "scripts": {
     "test": "is-ci \"test:coverage\" \"test:watch\"",
     "test:watch": "jest --watchAll",
-    "test:coverage": "jest --watch=false --coverage --updateSnapshot",
+    "test:coverage": "jest --watch=false --coverage --passWithNoTests --updateSnapshot",
     "build": "tsc",
     "prepublishOnly": "npm run build"
   },
