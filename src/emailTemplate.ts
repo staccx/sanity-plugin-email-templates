@@ -17,7 +17,7 @@ export default {
       },
     },
     {
-      type: "string",
+      type: "text",
       name: "namespace",
       title: "Namespace"
     },
