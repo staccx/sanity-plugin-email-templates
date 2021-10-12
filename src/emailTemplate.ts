@@ -18,11 +18,6 @@ export default {
     },
     {
       type: "text",
-      name: "namespace",
-      title: "Namespace"
-    },
-    {
-      type: "string",
       name: "subject",
       title: "Subject"
     },
