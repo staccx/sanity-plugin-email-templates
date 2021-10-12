@@ -19,14 +19,12 @@ export default {
     {
       type: "string",
       name: "namespace",
-      title: "Namespace",
-      description: "To keep things organized. Keep empty if you do not need it",
+      title: "Namespace"
     },
     {
-      type: "array",
+      type: "string",
       name: "subject",
-      title: "Subject",
-      of: [{ type: "block" }],
+      title: "Subject"
     },
     {
       type: "array",
