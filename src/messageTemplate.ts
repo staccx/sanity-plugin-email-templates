@@ -17,28 +17,27 @@ export default {
       },
     },
     {
-      title: 'Is this message sent as an SMS?',
-      name: 'sms',
-      type: 'boolean'
+      title: "Type of message",
+      name: "typeOfMessage",
+      type: "string",
+      options: {
+        list: [
+          {title: "E-Mail", value: "email"},
+          {title: "SMS", value: "sms"}
+        ],
+      }
     },
     {
       type: "text",
       name: "subject",
       title: "Subject",
-      hidden: ({ parent }) => parent?.sms
     },
     {
       type: "array",
       name: "body",
       title: "Body",
       of: [{ type: "block" }],
-      hidden: ({ parent }) => parent?.sms
-    },
-    {
-      type: "text",
-      name: "text",
-      title: "Text message",
-      hidden: ({ parent }) => !parent?.sms
+      hidden: ({ parent }) => parent?.typeOfMessage === "sms"
     },
   ],
 };
