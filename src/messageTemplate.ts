@@ -1,7 +1,7 @@
 export default {
   type: "document",
-  name: "emailTemplate",
-  title: "Email Templates",
+  name: "messageTemplate",
+  title: "Message Templates",
   fields: [
     {
       type: "string",
@@ -17,15 +17,27 @@ export default {
       },
     },
     {
+      title: "Type of message",
+      name: "typeOfMessage",
+      type: "string",
+      options: {
+        list: [
+          {title: "E-Mail", value: "email"},
+          {title: "SMS", value: "sms"}
+        ],
+      }
+    },
+    {
       type: "text",
       name: "subject",
-      title: "Subject"
+      title: "Subject",
     },
     {
       type: "array",
       name: "body",
       title: "Body",
       of: [{ type: "block" }],
+      hidden: ({ parent }) => parent?.typeOfMessage === "sms"
     },
   ],
 };
